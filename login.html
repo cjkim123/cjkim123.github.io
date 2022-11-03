@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+        .font {font-family: 'Poor Story', cursive;}
+
+        .top_left{
+        width: 150px;
+        height: 180px;
+        display: inline;
+        }
+        .top_left img{
+width: 150px;
+height: 150px;
+float: left;
+}
+        .top_mid_logo{
+            height: 80px;
+            width: 300px;
+            padding: 25px;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+        margin-left: 670px;
+        
+        }
+        .login{
+            height: 25px;
+            width: 200px;
+            float: right;
+            text-align: center;
+            display: inline;
+        
+        }
+        .login>a{
+            text-decoration-line: none;
+        }
+        .login>a:hover{
+            background-color: burlywood;
+            border-radius: 5px;
+        }
+        .top_menu{
+            height: 50px;
+            margin-top: 40px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black ;
+        }
+        ul a{
+    text-decoration-line:none ;
+}
+a:visited{
+    color: blue;
+}
+        ul li {list-style: none;
+            text-decoration-line: none;
+            float: left;
+            margin-left: 350px;
+        }
+      
+        .member_form{
+            text-align: center;
+            padding-left: 700px;
+            padding-top: 100px;
+        }
+    
+        .con1{
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            
+        }
+        </style>
+        </head>
+        <body>
+            <div class="font">
+
+                <!-- 상단 왼쪽 부분 -->
+                <div class="top_left">
+                    <a href="kcjhome.html"><img src="C:\Users\rlack\Documents\web0919_kcj\html_css\html\mywebsite\image\game-1926905_640.png"></a>
+                </div>
+                <!-- 상단 가운데 로고-->
+                <div class="top_mid_logo">
+                    <h1>게임 커뮤니티</h1>
+                </div>
+                <div class="login">
+                    <a href="login.html"> 로그인&nbsp;&nbsp;&nbsp; </a>
+                    <a href="Register.html"> 회원가입 </a>
+                </div>
+                
+                <div class ="top_menu">
+                    <ul>
+                        <li><a href="board.html">게시판</a></li>
+                        <li><a href="image.html">게임 이미지</a></li>
+                        <li><a href="video.html">게임 영상</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+                <form action="" name="membership">
+                    <div class="member_form">
+                        <table  border="2" >
+                            <tr>
+                                <td class="title"><label for="id">아 이 디</label></td>
+                                <td class="content"><input class="con1" type="text" name="id" id="id" required placeholder="user id"/></td>
+                            </tr>
+                            <tr>
+                                <td class="title"><label for="password">비 밀 번 호</label></td>
+                                <td class="content"><input class="con1" type="password" name="pass" id="pass" required placeholder="특수문자 미포함 0~12자" /></td>
+                            </tr>
+                            <tr>
+                                <td class="submit" colspan="2"><input type="submit" name="submit" id="submit" value="로그인"/>&nbsp;&nbsp;&nbsp;
+                                    <input type="reset" name="reset" id="reset" value="초기화"></td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </form>
+                </body>
+                </html>
